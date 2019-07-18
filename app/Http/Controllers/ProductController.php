@@ -111,7 +111,7 @@ class ProductController extends Controller
     {
         $product->delete();
         return response([
-            "success" => "product delted successfully"
+            "success" => "product deleted successfully"
         ]);
     }
 }
