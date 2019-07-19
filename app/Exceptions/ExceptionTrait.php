@@ -21,6 +21,7 @@ trait ExceptionTrait
     if ($this->isHttp($exception)) {
       return response()->json("Route not found", 404);
     }
+    return parent::render($request, $exception);
   }
 
 
